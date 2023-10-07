@@ -179,8 +179,17 @@ body {
     align-items: center;
     justify-content: center ;
     
+    
    
 }
+
+#detalles-personaje img{
+    width: 25rem;
+    border: 2px solid yellow;
+    margin: auto;
+}
+
+
 
 /* ... (estilos anteriores) */
 
@@ -228,8 +237,20 @@ body {
     margin-bottom: 0.5rem;
 }
 
-}@media screen and (min-width: 376px) and (max-width: 900px){
+}
+
+@media screen and (min-width: 376px) and (max-width: 900px){
 .seleccionado{
     width: 100px;
     height: 200px;
 }}
+@media screen and (min-width: 376px) and (max-width: 900px){
+#detalles-personaje img{
+    width: 20rem;
+    border: 2px solid yellow;
+    margin-left: -5.1rem;
+    height: 27rem;
+    object-fit: contain;
+ 
+}
+}

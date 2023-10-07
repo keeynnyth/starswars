@@ -60,6 +60,17 @@ document.addEventListener('DOMContentLoaded', () => {
         detallesPersonaje.style.alignItems='center';
         detallesPersonaje.style.justifyContent='center';
         detallesPersonaje.style.marginRight='45px';
+     
+
+        const mediumBp = matchMedia('min-width: 600px');
+        const changeSize = mql =>{
+            mql.matches
+            ?   (document.body.style.detallesPersonaje.img.maxWidth="27%")
+            :   (detallesPersonaje.style.maxWidth="60%");
+        }
+        mediumBp.addListener(changeSize);//escuchar cambios de tamaño del dispositivo
+        changeSize(mediumBp); //inicializar el cambio visual
+        
         
 
     }
