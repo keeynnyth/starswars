@@ -4,6 +4,9 @@ body {
     background-color: #ffffff;
     color: #000000;
     transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 body.dark-mode {
@@ -102,4 +105,18 @@ body.dark-mode #detalles-personaje {
 
 body.dark-mode .personaje.seleccionado {
     background-color: #ffb84d;
+}
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color:black;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+    color:#ffb84d;
+    font-size: 0.7rem;
+}
+.dark-mode footer {
+    color: #aaaaaa;
 }
